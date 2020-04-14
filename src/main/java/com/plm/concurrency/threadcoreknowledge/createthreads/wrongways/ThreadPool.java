@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
 public class ThreadPool {
 
     public static void main(String[] args) {
+
         ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i = 0; i < 1000; i++) {
             executorService.submit(new Task() {
